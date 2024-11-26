@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ user[1] }} {{ user[2] }}!</h1> <!-- Display the user's first and second names -->
+    <p>Location: {{ user[6] }}</p>
+    <p>Age: {{ user[7] }}</p>
+    <p>Favorite Book Category: {{ user[8] }}</p>
+
+    <h2>Actions</h2>
+    <ul>
+        <li><a href="/borrow">Borrow a Book</a></li>
+        <li><a href="/return">Return a Book</a></li>
+        <li><a href="/membership">Buy Membership</a></li>
+    </ul>
+
+    <a href="/logout">Logout</a>
+</body>
+</html>
